@@ -74,7 +74,7 @@ for i in range(10000):
     next_mse = mse_linear_reg(xs, ts, w0s[-1], w1s[-1])
     mses.append(next_mse)
 
-# 学習曲線
+# 学習曲線表示
 print(f'MMSE = {mses[-1]:.2f}')
 print('The learning curve was output.\n')
 plt.plot(mses)
